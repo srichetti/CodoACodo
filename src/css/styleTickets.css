@@ -6,17 +6,17 @@
 }
 
 .border-custom-Estudiante {
-  border: 2px solid #47749c !important;
+  border: 3px solid #47749c !important;
   border-radius: 0 !important;
 }
 
 .border-custom-Trainee {
-  border: 2px solid #5b8d98 !important;
+  border: 3px solid #5b8d98 !important;
   border-radius: 0 !important;
 }
 
 .border-custom-Junior {
-  border: 2px solid #dbc079 !important;
+  border: 3px solid #dbc079 !important;
   border-radius: 0 !important;
 }
 
@@ -27,7 +27,6 @@
 .text-left {
   text-align: left;
 }
-
 
 /*Botón para dropdown/lengueta/seleccion multiple*/
 .select-wrapper {
