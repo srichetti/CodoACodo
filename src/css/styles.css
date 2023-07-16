@@ -7,8 +7,15 @@ body {
 #page {
   min-height: 100vh;
   overflow-x: hidden;
+  padding-bottom: 430px;
+  position: relative;
 }
 
+@media (min-width:960px) {
+  #page {
+    padding-bottom: 84px;
+  }
+}
 
 a {
   text-decoration: none;
@@ -387,9 +394,6 @@ input[type="submit"]:hover {
   margin-right: 0.5em;
 }
 
-#apellido {
-  margin-left: 0.5em;
-}
 
 .form-text {
   margin-top: 0.25rem;
@@ -403,19 +407,20 @@ input[type="submit"]:hover {
 footer {
   background-color: #1e4f6d;
   padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 40px;
+  flex-direction: column;
 }
 
 .footer-section {
-  margin: 0 10px;
-  /* Reduce el margen lateral de las secciones */
+  margin-bottom: 1.5rem;
   text-align: center;
   color: white;
 }
@@ -426,4 +431,153 @@ footer {
 
 .pre-foot {
   padding: 1.5rem !important;
+}
+
+@media (min-width:960px) {
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  .footer-section {
+    margin: 0 10px;
+    /* Reduce el margen lateral de las secciones */
+    text-align: center;
+    color: white;
+  }
+}
+
+.formulario-tickets {
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.formulario-tickets__row {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+
+.formulario-tickets__field {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.formulario-ticket__label {
+  display: flex;
+  width: 100%;
+}
+
+select {
+  width: 100%;
+  border: solid 1px #ccc;
+  border-radius: 0.25rem;
+  height: 40px;
+  padding: 0 .5rem;
+}
+
+#total-pagar {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  color: #597d9d;
+  background-color: #cbe5fe;
+  border-color: #c6d9ea;
+}
+
+.formulario__button {
+  display: flex;
+  width: 100%;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: .25rem;
+  background-color: #96c93e;
+  border: none;
+  color: #fff;
+}
+
+@media (min-width:960px) {
+  .formulario-tickets {
+    width: 60%;
+    row-gap: 1.5rem;
+  }
+
+  .formulario-tickets__row {
+    flex-direction: row;
+    column-gap: 1rem;
+  }
+
+  .formulario-tickets__field {
+    width: 50%;
+  }
+}
+
+.ticket-categories {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  width: 100%;
+  row-gap: .5rem;
+}
+
+.ticket-category {
+  border: solid 2px;
+  padding: 1rem;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticket-category.blue {
+  border-color: #83a3bd;
+}
+
+.ticket-category.turquoise {
+  border-color: #79a5ab;
+}
+
+.ticket-category.yellow {
+  border-color: #ddbb7c;
+}
+
+@media (min-width:960px) {
+  .ticket-categories {
+    flex-direction: row;
+    padding: 2rem 1rem;
+    width: 60%;
+    column-gap: .5rem;
+    margin: 0 auto;
+  }
+
+  .ticket-category {
+    width: 33%;
+    padding: 2rem 1rem;
+    row-gap: 1rem;
+  }
+
+  .ticket-category__title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .ticket-category__percentage {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .ticket-category__detailes {
+    font-size: .875rem;
+    color: #707089;
+  }
 }

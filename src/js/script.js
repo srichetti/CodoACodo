@@ -16,9 +16,9 @@ function calcularTotal() {
         break;
     }
     var total = cantidad * valorTicket - (cantidad * valorTicket * descuento);
-    document.getElementById("tot_Pagar").value = "Total a Pagar: $" + total;
+    document.getElementById("total-pagar").value = "Total a Pagar: $" + total;
   } else {
-    document.getElementById("tot_Pagar").value = "";
+    document.getElementById("total-pagar").value = "";
   }
 }
 
